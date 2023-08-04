@@ -1,7 +1,6 @@
 using ExcelReader.Excel;
 using ExcelReader.Sql;
 using ExcelReader.Tests.Files;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Data;
 
 namespace ExcelReader.Tests;
