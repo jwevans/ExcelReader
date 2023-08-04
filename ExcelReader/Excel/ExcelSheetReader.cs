@@ -9,7 +9,6 @@ public class ExcelSheetReader : IExcelSheetReader
 {
     public DataTable Read(Stream fileStream, ExcelSheetReaderOptions options)
     {
-        //using var fileStream = File.Open(filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
         using var excel = new ExcelPackage(fileStream);
         using var sheet = GetSheet(options.SheetName, excel);
 
