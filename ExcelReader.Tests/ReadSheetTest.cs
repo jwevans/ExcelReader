@@ -6,7 +6,7 @@ namespace ExcelReader.Tests;
 public class ReadSheetTest
 {
     [Fact]
-    public void Test1()
+    public void ReadTest()
     {
         var reader = new ExcelSheetReader();
         var options = GetExcelReaderOptions();
