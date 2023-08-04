@@ -10,11 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Files\Employee Sample.xlsx" />
     <None Remove="Files\Financial Sample.xlsx" />
+    <None Remove="Files\MultiSheet Sample.xlsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Files\Employee Sample.xlsx" />
     <EmbeddedResource Include="Files\Financial Sample.xlsx" />
+    <EmbeddedResource Include="Files\MultiSheet Sample.xlsx" />
   </ItemGroup>
 
   <ItemGroup>

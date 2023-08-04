@@ -5,6 +5,8 @@ namespace ExcelReader.Tests.Files;
 public static class Resources
 {
     public const string FinancialSample = "ExcelReader.Tests.Files.Financial Sample.xlsx";
+    public const string ExployeeSample = "ExcelReader.Tests.Files.Employee Sample.xlsx";
+    public const string MultiSheetSample = "ExcelReader.Tests.Files.MultiSheet Sample.xlsx";
 
     public static Stream GetFileStream(string resourceName)
     {
