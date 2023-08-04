@@ -27,6 +27,12 @@ public class ReadSheetTest
             {
                 new ExcelColumn("Segment"),
                 new ExcelColumn("Country"),
+                new ExcelColumn("Units Sold"),
+                new ExcelColumn("Manufacturing Price"),
+                new ExcelColumn("Sales"),
+                new ExcelColumn("Profit"),
+                new ExcelColumn("Date"),
+                new ExcelColumn("Month Number"),
             }
         };
     }

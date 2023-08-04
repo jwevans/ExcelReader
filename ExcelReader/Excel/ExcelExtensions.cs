@@ -5,11 +5,12 @@ using System.Text.RegularExpressions;
 
 internal static class ExcelExtensions
 {
-    public const string CsvDateFormat = "MM/dd/yy hh:mm:ss tt";
+    public const string CsvDateFormat = "dd/MM/yyyy hh:mm:ss tt";
 
     public static bool TryParseDate(this ExcelRange cell, out DateTime date)
     {
-        const string pattern = "^(?i)m{1,2}\\/d{1,2}\\/y{2,4}";
+        //dd/mm/yyyy
+        const string pattern = "^(?i)d{1,2}\\/m{1,2}\\/y{2,4}";
 
         // If one of the built in date formats is used for this cell OfficeOpenXml will try and
         // convert the value to be a DateTime data type in which case we know we have a date
